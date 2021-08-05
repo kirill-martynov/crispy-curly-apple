@@ -1,0 +1,12 @@
+.user {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+
+  background-color: #f2f5f7;
+  border-radius: 6px;
+}
+
+.name {
+  font-size: 14px;
+}

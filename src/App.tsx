@@ -1,36 +1,33 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  NavLink,
-} from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import s from './App.module.scss';
+import { Sidebar } from "./core/components/Sidebar";
+import { Header } from "./core/components/Header";
 
-const Home = React.lazy(() => import('./screens/home/Home'));
-const Profile = React.lazy(() => import('./screens/profile/Profile'));
-const Editor = React.lazy(() => import('./screens/editor/Editor'));
+import './assets/css/reset.css';
+import s from "./App.module.css";
 
+const Home = React.lazy(() => import("./screens/home/Home"));
+const Profile = React.lazy(() => import("./screens/profile/Profile"));
+const Editor = React.lazy(() => import("./screens/editor/Editor"));
 
 function App() {
   return (
-    <React.Fragment>
+    <div className={s.app}>
       <React.Suspense fallback={<span>Loading...</span>}>
         <Router>
-          <nav>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/Profile">Profile</NavLink>
-            <NavLink to="/Editor">Editor</NavLink>
-          </nav>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/Profile" component={Profile} />
-            <Route exact path="/Editor" component={Editor} />
-          </Switch>
+          <Sidebar />
+          <div className={s.content}>
+            <Header />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/Profile" component={Profile} />
+              <Route exact path="/Editor" component={Editor} />
+            </Switch>
+          </div>
         </Router>
       </React.Suspense>
-    </React.Fragment>
+    </div>
   );
 }
 
