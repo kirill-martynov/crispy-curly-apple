@@ -1,12 +1,31 @@
 .user {
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  justify-content: center;
+  padding: 6px 8px;
 
   background-color: #f2f5f7;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 .name {
+  margin-left: 10px;
+
   font-size: 14px;
+  font-weight: 500;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6px;
+  padding: 0;
+
+  background: initial;
+  border: 0;
+}
+
+.button svg {
+  fill: #666a73;
 }

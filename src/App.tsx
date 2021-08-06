@@ -7,9 +7,10 @@ import { Header } from "./core/components/Header";
 import './assets/css/reset.css';
 import s from "./App.module.css";
 
-const Home = React.lazy(() => import("./screens/home/Home"));
-const Profile = React.lazy(() => import("./screens/profile/Profile"));
-const Editor = React.lazy(() => import("./screens/editor/Editor"));
+const Home = React.lazy(() => import("./screens/Home"));
+const Courses = React.lazy(() => import("./screens/Courses"));
+const Profile = React.lazy(() => import("./screens/Profile"));
+const Editor = React.lazy(() => import("./screens/Editor"));
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
             <Header />
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route exact path="/Profile" component={Profile} />
+              <Route exact path="/Courses" component={Courses} />
               <Route exact path="/Editor" component={Editor} />
+              <Route exact path="/Profile" component={Profile} />
             </Switch>
           </div>
         </Router>
