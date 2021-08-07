@@ -1,5 +1,5 @@
 .sidebar {
-  width: 200px;
+  width: 240px;
   height: 100vh;
   padding-top: 30px;
   padding-right: 20px;
@@ -9,8 +9,9 @@
   border-right: 1px solid #eee;
 }
 
-
 .logoWrapper {
+  padding-left: 10px;
+
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -36,18 +37,37 @@
 .navigationLink {
   display: flex;
   align-items: center;
+  padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 20px;
 
   color: #a4aab5;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
-  letter-spacing: 1px;
+
+  border-radius: 10px;
+
+  transition-property: color, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 }
 
 .navigationLink svg {
-  margin-right: 8px;
+  margin-right: 14px;
 
   fill: #a4aab5;
+  transition: 0.3s fill ease-out;
+}
+
+.navigationLink:hover,
+.navigationLinkActive {
+  color: #fff;
+
+  background-color: rgb(132, 82, 219);
+}
+
+.navigationLink:hover svg,
+.navigationLinkActive svg {
+  fill: #fff;
 }

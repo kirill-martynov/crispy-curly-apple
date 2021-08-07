@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { Sidebar } from "./core/components/Sidebar";
 import { Header } from "./core/components/Header";
+import { Container } from "./core/components/Container";
 
-import './assets/css/reset.css';
+import "./assets/css/reset.css";
 import s from "./App.module.css";
 
 const Home = React.lazy(() => import("./screens/Home"));
@@ -20,12 +21,14 @@ function App() {
           <Sidebar />
           <div className={s.content}>
             <Header />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/Courses" component={Courses} />
-              <Route exact path="/Editor" component={Editor} />
-              <Route exact path="/Profile" component={Profile} />
-            </Switch>
+            <Container>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/Courses" component={Courses} />
+                <Route exact path="/Editor" component={Editor} />
+                <Route exact path="/Profile" component={Profile} />
+              </Switch>
+            </Container>
           </div>
         </Router>
       </React.Suspense>
