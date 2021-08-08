@@ -3,6 +3,8 @@
     "rootDir": "./src",
     "baseUrl": "./",
     "paths": {
+      "src/*": ["src/*"],
+
       "@Core/*": ["src/core/*"],
 
       "@Screens/*": ["src/screens/*"],

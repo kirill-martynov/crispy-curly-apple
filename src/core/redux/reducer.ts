@@ -1,9 +1,13 @@
 import { combineReducers } from "redux";
+import { connectRouter } from "connected-react-router";
 
-import { homeReducer } from '../../screens/Home/store/reducers/homeReducer';
+import history from "./history";
+
+import { homeReducer } from "@Home/store/reducers/homeReducer";
 
 export const reducer = combineReducers({
+  router: connectRouter(history),
   home: homeReducer,
 });
 
-export type TRootState = ReturnType<typeof reducer>
+export type TRootState = ReturnType<typeof reducer>;

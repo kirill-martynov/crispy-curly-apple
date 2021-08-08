@@ -1,0 +1,12 @@
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  column-gap: 30px;
+}
+
+.title {
+  margin-bottom: 30px;
+
+  font-size: 36px;
+  font-weight: 700;
+}

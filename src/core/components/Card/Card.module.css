@@ -21,13 +21,13 @@
   height: 120px;
   margin-bottom: 15px;
 
-  background: #ccc;
+  background: #eef0f2;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
 
 .header svg {
-  fill: #9e9d9d;
+  fill: #7f898f;
 }
 
 .content {

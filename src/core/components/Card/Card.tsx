@@ -11,10 +11,14 @@ interface IProps {
 
   image?: string;
 
-  onClick: (id: number) => void;
+  onClick?: (id: number) => void;
 }
 export const Card = ({ id, name, description, image = "", onClick }: IProps) => {
   const handleClick = () => {
+    if (!onClick) {
+      return;
+    }
+
     onClick(id);
   }
 
@@ -23,7 +27,7 @@ export const Card = ({ id, name, description, image = "", onClick }: IProps) => 
       <div className={s.header}>
         <div className={s.image}>
           {image ? (
-            <img src={image} />
+            <img src={image} alt="course" />
           ) : (
             <Svg name="image" width="48" height="48" />
           )}

@@ -17,7 +17,7 @@ export const MENU = [
     name: 'Editor',
     path: '/editor',
     icon: 'editor',
-    exact: true,
+    exact: false,
     external: false,
   },
   {
