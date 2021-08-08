@@ -1,7 +1,8 @@
 import * as React from "react";
 import { NavLink } from "react-router-dom";
 
-import { Svg } from "../Svg";
+import { Svg } from "@Core/components/Svg";
+import { Icon } from "@Core/components/Icon";
 
 import { MENU } from "./sidebarConstants";
 
@@ -23,7 +24,7 @@ export const Sidebar = () => {
             to={item.path}
             exact={item.exact}
           >
-            <Svg name={item.icon} width="28" height="28" />
+            <Icon name={item.icon} width="28" height="28" />
             <span>{item.name}</span>
           </NavLink>
         ))}

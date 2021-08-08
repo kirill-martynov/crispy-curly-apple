@@ -1,13 +1,18 @@
 .button {
-  padding: 0;
+  padding: 12px 20px;
 
-  background: initial;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  
+  background-color: var(--primary-color);
   border: 0;
+  border-radius: 6px;
 
   transition: all 0.3s linear;
   cursor: pointer;
 }
 
 .button:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }

@@ -30,7 +30,6 @@ export const CardList = ({ title, className, cards, onClick }: IProps) => {
               onClick={onClick}
             />
           ))}
-        {cards.map}
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import * as React from "react";
 
-import { Svg } from "../Svg";
+import { Svg } from "@Core/components/Svg";
+import { Icon } from "@Core/components/Icon";
 
 import s from "./Card.module.css";
 
@@ -13,14 +14,18 @@ interface IProps {
 
   onClick?: (id: number) => void;
 }
-export const Card = ({ id, name, description, image = "", onClick }: IProps) => {
+export const Card = ({
+  id,
+  name,
+  description,
+  image = "",
+  onClick,
+}: IProps) => {
   const handleClick = () => {
-    if (!onClick) {
-      return;
+    if (onClick) {
+      onClick(id);
     }
-
-    onClick(id);
-  }
+  };
 
   return (
     <div className={s.card} onClick={handleClick}>
@@ -29,7 +34,7 @@ export const Card = ({ id, name, description, image = "", onClick }: IProps) => 
           {image ? (
             <img src={image} alt="course" />
           ) : (
-            <Svg name="image" width="48" height="48" />
+            <Icon name="image" width="48" height="48" />
           )}
         </div>
       </div>

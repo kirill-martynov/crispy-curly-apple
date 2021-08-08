@@ -64,7 +64,7 @@
 .navigationLinkActive {
   color: #fff;
 
-  background-color: rgb(132, 82, 219);
+  background-color: var(--primary-color);
 }
 
 .navigationLink:hover svg,

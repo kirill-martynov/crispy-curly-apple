@@ -1,9 +1,10 @@
 import * as React from "react";
 import cn from "classnames";
 
-import { Avatar } from "../Avatar";
-import { Button } from "../Button";
-import { Svg } from "../Svg";
+import { Avatar } from "@Core/components/Avatar";
+import { Button } from "@Core/components/Button";
+import { Svg } from "@Core/components/Svg";
+import { Icon } from "@Core/components/Icon";
 
 import s from "./User.module.css";
 
@@ -17,7 +18,7 @@ export const User = ({ className }: IProps) => {
       <Avatar />
       <span className={s.name}>John</span>
       <Button className={s.button}>
-        <Svg name="arrow-expand" width="24" height="24" />
+        <Icon name="arrow-expand" width="24" height="24" />
       </Button>
     </div>
   );

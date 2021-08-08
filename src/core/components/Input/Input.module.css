@@ -1,0 +1,56 @@
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 10px;
+
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.inputWrapper {
+  position: relative;
+
+  max-width: 450px;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+
+  transform: translateY(-50%);
+}
+.icon svg {
+  fill: var(--gray-color)
+}
+
+.input {
+  width: 100%;
+  padding: 10px 16px;
+
+  font-size: 16px;
+
+  border: 1px solid var(--gray-color); 
+  border-radius: 4px;
+
+  transition-property: border-color;
+  transition-timing-function: ease;
+  transition-duration: 0.3s;
+}
+
+.input::placeholder {
+  color: var(--gray-color);
+}
+
+.input:focus {
+  outline: 0;
+
+  border-color: var(--primary-color)
+}
+
+.input.extended {
+  padding-left: 30px;
+}
