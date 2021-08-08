@@ -1,0 +1,13 @@
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  column-gap: 30px;
+}
+
+.title {
+  margin-bottom: 20px;
+
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}

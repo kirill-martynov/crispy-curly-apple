@@ -10,7 +10,7 @@ export const MENU = [
     name: 'Courses',
     path: '/courses',
     icon: 'courses',
-    exact: true,
+    exact: false,
     external: false,
   },
   {
