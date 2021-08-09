@@ -8,6 +8,7 @@ import { Textarea } from "@Core/components/Textarea";
 
 import s from "./CourseEditor.module.css";
 import { Icon } from "src/core/components/Icon";
+import { CourseEditorLectures } from "./components/CourseEditorLectures";
 
 type TUseParams = {
   id: string;
@@ -74,7 +75,9 @@ export const CourseEditor = () => {
           </div>
         </div>
 
-        <div className={cn(s.column, s.rightColumn)}></div>
+        <div className={cn(s.column, s.rightColumn)}>
+          <CourseEditorLectures courseLectures={[]} />
+        </div>
       </div>
     </div>
   );

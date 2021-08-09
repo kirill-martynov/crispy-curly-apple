@@ -1,0 +1,1 @@
+export { CourseEditorLecture } from './CourseEditorLecture';

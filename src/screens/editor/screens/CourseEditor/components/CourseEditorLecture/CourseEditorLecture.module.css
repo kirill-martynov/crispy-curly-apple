@@ -1,0 +1,75 @@
+.courseEditorLecture {
+  margin-bottom: 20px;
+}
+
+.courseEditorLecture:last-child {
+  margin-bottom: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.header span {
+  font-weight: 600;
+}
+
+.expand {
+  padding: 0;
+  margin-left: auto;
+
+  background: initial;
+}
+
+.expand svg {
+  fill: #666a73;
+}
+
+.expand.active svg {
+  transform: rotate(180deg);
+}
+
+.content {
+  transition: opacity 0.3s linear;
+}
+
+.field {
+  margin-bottom: 30px;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actions button {
+  background-color: var(--red-color);
+}
+
+.enter {
+  opacity: 0;
+}
+
+.enterActive {
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
+
+.exit {
+  opacity: 1;
+}
+
+.exitActive {
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
