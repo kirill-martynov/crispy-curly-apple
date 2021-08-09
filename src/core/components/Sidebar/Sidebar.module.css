@@ -13,8 +13,7 @@
   padding-left: 10px;
 
   font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-weight: 800;
 
   transition: opacity 0.3s linear;
 }
@@ -25,7 +24,7 @@
 
 .logoWrapper a,
 .logoWrapper a:visited {
-  color: #333;
+  color: var(--primary-color);
 }
 
 .navigation {
@@ -46,7 +45,7 @@
   font-size: 18px;
   font-weight: 500;
 
-  border-radius: 10px;
+  border-radius: 8px;
 
   transition-property: color, background-color;
   transition-duration: 0.3s;

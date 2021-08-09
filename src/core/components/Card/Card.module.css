@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 300px;
 
-  border-radius: 6px;
+  border-radius: 4px;
   border: 1px solid #eee;
   box-shadow: 0px 3px 12px -5px rgba(0, 0, 0, .2);
 
@@ -22,8 +22,8 @@
   margin-bottom: 15px;
 
   background: #eef0f2;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .header svg {

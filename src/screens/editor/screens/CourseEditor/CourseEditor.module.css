@@ -4,3 +4,32 @@
   font-size: 36px;
   font-weight: 700;
 }
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 550px);
+  justify-content: space-between;
+}
+
+.fields {
+  max-width: 450px;
+}
+
+.field {
+  margin-bottom: 30px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  margin-bottom: 10px;
+
+  background-color: #eef0f2;
+  border-radius: 4px;
+}
+
+.image svg {
+  fill: #7f898f;
+}
